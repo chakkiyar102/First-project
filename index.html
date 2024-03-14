@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div id="container">
+    <nav class="nav-bar">
+      <img id="logo" src="./images/logo.png" alt="logo" />
+      <ul class="list">
+        <li class="listItem"><a class="link" href="#home">HOME</a></li>
+        <li class="listItem"><a class="link" href="#about">ABOUT</a></li>
+        <li class="listItem"><a class="link" href="#skills">SKILL</a></li>
+        <li class="listItem"><a class="link" href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!-- home -->
+    <!-- Create separate sections for separate divs below -->
+    <section id="home">
+      <div class="title">
+        <h1>I'm Ana <span id="lastname">Steel.</span>
+        </h1>
+        <p>
+          This is my official portfolio website to describes all<br />details
+          and work experience in Web Development.        </p>
+        <!-- add download attribute inside <a> tag -->
+        <a id="download" href="./images/genius.pdf" download="">DOWNLOAD CV</a>
+      </div>
+      <div class="images">
+        <img id="shape" class="imageGroup" src="./images/bg-yellow.png" alt="" />
+        <img id="girl" class="imageGroup" src="./images/hero-girl.png" alt="" />
+      </div>
+    </section>
+    <!-- About me section -->
+    <section id="about">
+      <div class="heading">
+        <h1>About Me</h1>
+        <span>Introduction</span>
+      </div>
+
+      <div class="about-content">
+        <div class="about-image">
+          <img src="./images/three-ladies.png" alt="three-ladies" />
+        </div>
+        <div class="about-details">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+            quaerat officiis fuga quam, animi ducimus non iusto, nostrum
+            ipsum, veniam exercitationem dignissimos quae qui odit distinctio
+            ad molestiae facere ratione!
+          </p>
+          <div class="information">
+            <div class="info-box">
+              <i class="fa-solid fa-user"> </i> <span>Ana Steel</span>
+            </div>
+            <div class="info-box">
+              <i class="fa-solid fa-phone"></i> <span>9087654321</span>
+            </div>
+            <div class="info-box">
+              <i class="fa-solid fa-envelope"></i>
+              <span>anasteel@gmail.com</span>
+            </div>
+            <div class="info-box">
+              <i class="fa-brands fa-github"></i> <span>anasteel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills section -->
+    <section id="skills">
+      <div class="heading">
+        <h1>Skills</h1>
+        <span>My Skills</span>
+      </div>
+      <div class="skill-container">
+        <div class="progress-bar">
+          <div class="bar-container">
+            <h3>HTML</h3><span>95%</span>
+            <div class="bar-box"></div>
+            <div class="bar-box html-bar"></div>
+          </div>
+          <div class="bar-container">
+            <h3>CSS</h3><span>88%</span>
+            <div class="bar-box"></div>
+            <div class="bar-box css-bar"></div>
+          </div>
+          <div class="bar-container">
+            <h3>JS</h3><span>89%</span>
+            <div class="bar-box"></div>
+            <div class="bar-box js-bar"></div>
+          </div>
+          <div class="bar-container">
+            <h3>REACT</h3><span>85%</span>
+            <div class="bar-box"></div>
+            <div class="bar-box react-bar"></div>
+          </div>
+        </div>
+        <div class="skill-img">
+          <img src="./images/one-lady.png" alt="one-lady">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- contact -->
+
+    <section id="contact">
+      <div class="heading">
+        <h1>Contact</h1>
+        <span>My Contacts</span>
+      </div>
+      <div class="icon-set">
+        <div class="icon"><a href="https://www.linkedin.com/in/abhiramchakkiyar/"><i
+              class="fa-brands fa-linkedin fa-2x"></i></a></div>
+        <div class="icon"><a href="https://www.linkedin.com/in/abhiramchakkiyar/" target="_blank"><i
+              class="fa-brands fa-github"></i></a></div>
+        <div class="icon"><a href="https://www.linkedin.com/in/abhiramchakkiyar/" target="_blank"><i
+              class="fa-brands fa-twitter"></i></a></div>
+        <div class="icon"><a href="https://wa.me/9567121494" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="icon"><a href="https://www.linkedin.com/in/abhiramchakkiyar/" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a></div>
+        <div class="icon"><a href="https://www.linkedin.com/in/abhiramchakkiyar/"
+            target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a></div>
+
+      </div>
+    </section>
+  </div>
+  
+  <footer>
+    <p>© My Protfolio Design 2023, All Rights Reserved ® Ana Steel</p>
+    <div class="up-arrow">
+      <a href="#container"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+  </footer>
+  </div>
+</body>
+
+</html>

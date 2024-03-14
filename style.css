@@ -1,0 +1,334 @@
+* {
+  margin: 0px;
+  /* setting this as 0 to override any default margins or passings provided by browser */
+  padding: 0px;
+  font-family: "Kode Mono", monospace;
+}
+
+.container {
+  width: 100%;
+  /*  % is used to relate to the whole element's width.*/
+  height: 100vh;
+  /* vh = 19.2px Also, If you use vh it is set in relation to the viewport and not the direct parent element. */
+  position: relative;
+  /*positiom at the exact location and all child components (absolute elements) will be placed relative to the parent component */
+}
+.nav-bar {
+  display: flex;
+  /* moves the child elements inside a parent element to inline side by side */
+  width: 85%;
+  /* reduced the width of the nav bar relative to the parent container */
+  justify-content: space-between;
+  /* adds space between two child elements relative to parent */
+  margin-left: 100px;
+  align-items: center;
+  /* to align the nav bar element vertically centered */
+}
+
+#logo {
+  width: 130px;
+  /* height will be auto-adjusted */
+}
+
+.listItem {
+  display: inline-block;
+
+  /* individual elements will be positioned side by side*/
+  list-style: none;
+  /* removes any bullets infront of the list item */
+  margin: 10px 20px;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  /* removes underline or any decoration associated with the hyperlink */
+  font-weight: bold;
+  /* adds weight to the font */
+}
+
+.link:hover {
+  color: red;
+  /* Pseudo class defines a special state of an element. E.g., hover, visited, active, unvisited*/
+}
+
+.title {
+  margin-left: 8%;
+  margin-top: 13%;
+}
+
+.title h1 {
+  /* descendant class */
+  font-size: 55px;
+}
+
+.title p {
+  /* descendant class */
+  margin-top: 25px;
+}
+
+#lastname {
+  color: orange;
+}
+
+#download {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  /* removes underline */
+  padding: 10px 20px;
+  border-radius: 6px;
+  /* to add corner radius and make curvature */
+  margin-top: 30px;
+  display: inline-block;
+  /* The browser will recognize the different attributes like height, width, margin, etc once this attribute is added. */
+}
+
+.images {
+  width: 38%;
+  height: 80%;
+  position: absolute;
+  /* positions relative to the parent element to which position absolute is provided.*/
+  right: 30px;
+  bottom: 0px;
+}
+
+.imageGroup {
+  position: absolute;
+  /* stack images one over the other in a specific position relative to the parent  */
+  height: 100%;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%);
+  /* to bring back to the original place by avoiding scroll */
+  transition: bottom 1s, left 2s;
+  /* sets time delay that allows the element to transition from 50% to 40% in the left and 0px to 50px from the bottom*/
+}
+
+.images:hover #girl {
+  left: 40%;
+}
+
+/* Although this is a combination of pseudo class and descendent class, it is still called a decendent class */
+.images:hover #shape {
+  bottom: 50px;
+}
+
+/* About section */
+
+#about {
+  margin: 16% 8% 0 8%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 35px;
+  /* font size deals with height and width of font, whereas font weight deals with boldness */
+}
+
+.heading span {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+.about-content {
+  display: grid;
+  /* puts the divs inside specified number of grids */
+  grid-template-columns: repeat(2, 1fr);
+  /* 1 fr (frame/fractional unit) = 225 px Here you have added two columns with 225px each where content inside your two divs will be distributed in the grid. Using the fr unit, you're dividing the space available in the grid container into fractions and allocating those fractions to the grid tracks. Say, you have three divs, then specify (3, 1fr) instead. */
+  gap: 30px;
+  /* space between two grid boxes */
+  /*  margin-top: 2rem; */
+  /* 1 rem (root em) is equal to the font size of the root element of the document. 1 rem is usually equal to 16px, which is usually the default font size of the root html element */
+}
+
+.about-image img {
+  width: 88%;
+}
+
+.about-details {
+
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.about-details p {
+  text-align: justify;
+  /* text wil align horizontally from start till end for every line except for the last line if content is less.  */
+}
+
+.information {
+  margin-top: 30px;
+}
+
+.info-box {
+  margin-bottom: 20px;
+}
+
+.info-box span {
+  margin-left: 15px;
+}
+
+/* Skills section */
+
+#skills {
+  margin: 8% 8% 0% 8%;
+}
+
+.skill-container {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  /* 1rem = 16px */
+  margin-top: 2rem;
+}
+
+.skill-img img {
+  width: 90%;
+}
+
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0px;
+  margin-bottom: 2rem;
+  align-items: center;
+  position: relative;
+}
+
+.bar-container span {
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.bar-box {
+  width: 100%;
+  height: 0.5rem;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.html-bar {
+  background-color: orange;
+  width: 95%
+}
+
+.css-bar {
+  background-color: orange;
+  width: 88%
+}
+
+.js-bar {
+  background-color: orange;
+  width: 89%
+}
+
+.react-bar {
+  background-color: orange;
+  width: 85%
+}
+
+/* Contact section */
+
+.icon-set {
+  display: flex;
+  /* stacks items side by side */
+  justify-content: center;
+  /* aligns element horizontally to the center */
+  align-items: center;
+  /* aligns element vertically to the center */
+  margin-top: 3%;
+}
+
+/* To apply same properties to different classes, use a comma separator between classes */
+.icon,
+.up-arrow {
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid; */
+  /* border: 2px ridge cadetblue; */
+  border-radius: 50%;
+  /* can create a round shaped only if height and width are same. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.icon i {
+  /* alternatively, use fa-2x inside the icon property of the element */
+
+  font-size: 30px;
+  color: black;
+}
+
+/* For pseudo classes, no spaces should be added  */
+.icon:hover {
+  /* background-color: orange; */
+  background-image: linear-gradient(to top left, red, yellow);
+  /* to 'direction name' means towards that direction */
+
+}
+
+.icon:hover i {
+  color: white;
+  animation: shake 0.75s infinite;
+  /* animation */
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+
+/* footer */
+
+footer p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 3rem;
+
+}
+
+.up-arrow {
+  float: right;
+  /* element floats on the right side */
+  background-image: linear-gradient(to top left, red, yellow);
+  margin: 30px 20px 30px 0px;
+  font-size: 30px;
+}
+
+.up-arrow:hover i {
+  color: white;
+}
+
+/* to add smooth scroll effect in html */
+html {
+  scroll-behavior: smooth;
+}
