@@ -29,7 +29,6 @@
   width: 130px;
   /* height will be auto-adjusted */
 }
-
 .listItem {
   display: inline-block;
 
@@ -63,7 +62,7 @@
 }
 
 .title p {
-  /* descendant class */
+  /* descendant class, know what? */
   margin-top: 25px;
 }
 
