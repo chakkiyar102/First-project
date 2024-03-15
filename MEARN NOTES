@@ -1,0 +1,677 @@
+## HTML - HYPER TEXT MARKUP LANGUAGE
+
+Markup Language: Tag-based language for designing web pages (run by web browser)
+Programming Language: To perform logical operations (run by own language compilers)
+
+Tags:
+
+## Basic tags forming basic structure.
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur aut asperiores dolore, voluptatum, ea perspiciatis nobis mollitia illo eligendi odio molestias ullam sed nisi corrupti? Atque cupiditate animi repellat vitae?
+</body>
+</html>
+
+index.html is mandatory for hosting
+css can be named in any way
+
+## PROGRAMMING LANGUAGE
+
+logical operations design, perform operations, make decisions, and handle data
+
+## MARKUP LANGUAGE
+
+- tag-based language
+- designing purposes
+- browser runs or renders it
+
+## TAG
+
+<TAGNAME>
+
+CDN: Content Delivery Network, Use fontawesome cdn for logos and use the hyperlink inside html link tag's href.
+
+Then, use the link of icons inside the body of html.
+
+The same process can be used for Google fonts. Select all fonts from google fonts and generate the embed code. Paste the embed code with link reference inside HTML head. The css of font you want can be added inside the CSS sheet as a font style property.
+
+## DIFFERENT TYPES OF TAGS
+
+1. opening tag
+2. closing tag
+3. self-closing tags/void (html) element - e.g., img
+4. <a> tag - to create links
+
+## HTML tag and HTML element:
+
+html tag has tags, whereas, html element has content plus tags.
+
+Commenting shortcut: Option/Alt+Shift+A or /\* \*/
+
+## HTML
+
+Basic structure: mandatory outline
+
+<HTML>
+<head>
+<title>
+</title>
+</head>
+<body>
+content
+</body>
+</HTML>
+
+## semantic tags: reduces page loading time, page optimization. They are:
+
+> To optimize web pages (all should come inside <body> tag)
+
+1. <header>
+2. <aside>
+3. <main>
+4. <footer>
+
+## HTML 5 - Newest version
+
+Launch by pressing (!) + enter or typing html5
+
+## tags:
+
+1. <h> - h1 -> h6 - to create headings
+
+2. <p> to create paragraphs (wrapper - html wrapper extension)
+
+3. <img> to add images
+
+4. <a> - anchor tags - to add links (<href>)
+
+## Attributes:
+
+Defines the property of a tag (provides more information to a tag).
+e.g., src, alt, width, height, href
+
+- Block-level elements: Consumes the entire width of the row and always starts in a new line (eg. p, h, div, figure, etc.)
+- Inline elements: Same line arrangement (img, a, span, b, i, em, strong, u, small, sub, sup, br, code, time, iframe)
+
+---
+
+## Home work:
+
+Try some below html text **formatting tags** and find media updates in HTML 5.
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+## Date - 16 Feb:
+
+dot,forward slash (./) select folder to select media from source for video, figure, audio, etc.
+
+- Nesting of website is made possible by <iframes>.
+
+html 5:
+
+1. Video - controls attribute for player <video controls> source src type</video>
+2. Audio - controls attribute for player
+3. article tag
+4. nav tag - For navigation purposes
+5. progress tag
+6. figure tag
+7. section
+
+## types of lists
+
+1. ordered list
+   ol li -->
+   - li*4 (shortcut for 4 list items)
+   - "type" attribute inside ol tag and use the type of character for bullet list.
+2. unordered list
+   ul li -->
+   - "type" attribute inside ul tag and use square or circle.
+
+## Tables
+
+<thead> > tr > th*no.of headings
+tbody > individual trs > td**no.of data entries
+
+## Feb 19
+
+Forms > To create login and other data entry needs
+
+- <form> -> label and input tags
+- placeholder attribute is html5 only
+- "id" and "for" attributes for connecting label and input.
+- name attribute - grouping and selection at one time.
+
+## types of labels:
+
+- text
+- password
+- email: For email tag, gmail string is output expected, by default.
+- date
+- radio - Name attribute in input element for grouping and at a time selection.
+- file - for picking or uploading file
+- number - by default, lets you select a value from unlimited intigers and negative values. Add "min" and "max" attribute values to provide a range of selection. Use "step" attribute to skip by a certain margin inside selection.
+- textarea: used to create a larger input box.
+- select - for dropdown selection. Value attribute is used to store the selected option in the db.
+- checkbox - for accepting conditions etc.
+- button - type should be "submit" if used inside form for submitting the entire form; else, use the type button if used anywhere else.
+
+---
+
+## CSS: Cascading style sheet
+
+- to style the content created in html
+
+- Normalize.css link to cdn applied as a separate style in <head>. Use the cdn link in href: https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css
+
+* Different ways of using CSS:
+
+1. Inline CSS:
+
+styling within the opening tag
+
+## syntax:
+
+<tagname style = "property1:value; property2:value;">
+
+- ; means, the propert and value pair has ended
+
+2. Internal CSS:
+
+Should be placed inside <style> tag inside head tag after title. Tag should be called as tagname.
+
+## syntax:
+
+<style>
+    selector {
+        property:value;
+    }
+    </style>
+
+- selector is the tag
+
+3. external css
+
+---
+
+- create a file with extension. e.g., filename.css
+- should link the css file with the html file.
+
+* should use link tag for this purpose.
+* link tag to be added under title. "rel" attribute is called relation and is stylesheet.
+
+## Why external css is better?
+
+- Improves Readibility
+- Page Loading time is reduced.
+- Reusability is high
+
+## CSS style priority order is
+
+Inline > Internal > External
+
+- CSS selectors:
+
+---
+
+1. Tagname (tag selector) - tag-based styling
+2. id selector (#) - unique tag styling. For e.g., there are 4 para tags and you have to style the second tag alone. The unique identifier is #id_name, assign the id attribute to the tag.
+3. class selectors (.)- group styling. I have to style para 3 and 5 together. Use dot operator. assign the class to the tags with class names.
+4. Universal selector (*)- Affects the entire style of the document. Use * {property:value;} It affects all of the document provided there are no other universal selectors.
+5. Descendent selector: This approach is used to style specific parts of a webpage based on their hierarchy and relationship in the document structure. (parent space child {property:value})
+   e.g., div p {font-family: cursive;}
+   .selector tagname {property: value;}
+   #selector tagname {property: value;}
+
+## Feb 20
+
+## CSS box model:
+
+The box that wraps around every element in an html.
+
+It contains:
+
+1. **Border**: Invisible line drawn around content or element. Can see only when a style is applied. Can be applied inside the {width style color}.
+
+- Styles above can be different:
+  i. solid
+  ii. dotted
+  iii. dashed
+  iv. double
+  v. groove
+  vi. ridge
+  vii. inset
+  viii. outset
+
+2. **Margin**: Gap gap between the border and outer space/element. It applied to all sides of the margin. Add specific margin-top, margin-left, margin-right, margin-botton properties. Check prog9.html.
+
+**Note**: Alternatively, when margin values are different for different sides, use the syntax values in clockwise order from top to left.
+syntax: {margin: top right bottom left}
+
+Likewise, If only two values are provided, then first value is applied for top and bottom margins and next value is applied for left and right.
+syntax: {top&bottom left&right}
+
+3. **Padding**: Space between content and the border.
+
+Padding has the same concept as margin's properties.
+
+---
+
+- Span tag:
+
+---
+
+It's an inline element. To style content inside a different element.
+
+- **side note**: style="text-align:center" for center alignment.
+
+- Div tag:
+
+---
+
+Used to create divisions in the web page. This is a block level tag which means it shows in a new line. Div tags are usually empty unless properties are provided.
+
+## Feb 21
+
+- Cards:
+
+To have a card layout encomassing other elements. The high is auto-adjusted when not provided for card.
+
+- Card properties:
+  - border-radius- for curvature
+  - Percentage width is relative to parent width. It should be 100%
+
+Properties:
+
+- Use descendent selector whereever necessary.
+- background-image: url('url string')
+- background-size: * cover: covers the width of the page,
+  - contain: contains the actual resolution of image in the width.
+- background-color
+- background-attachment: to allow for stickiness of elememt like image at the top when scrolling. Use property value **Fixed**. You can add other values too.
+- opactity: to reduce transparency of an element. Use opacity property and add value in decimal range. e.g., 0.6
+- position: fixed; It fixes the element where it was originally. Other things scroll behind. You can also add _top_ and _bottom_ properties to relatively position the element to the screen.
+
+Feb 22 (Check comments beside style.css's properties for more details)
+-------
+
+* viewport height: It's another unit like px. 1 vh= 19.2px.
+* position relative: positions the element at the exact location. And, all child components will be placed relative to this parent component.
+* Display:flex - When the parent has this property applied, all child elements, including images get placed side by side.
+* justify-content: space-between - Pushes the content to start from the other end of the container.
+* display: inline-block - Add children elements inside parent side by side.
+
+## Pseudo class: Defines a special state of an element.
+
+e.g., mouse hover, visited, link active, unvisited, etc.
+
+* download attribute instructs to download a file
+
+* position absolute: Position relates to relative element
+* position relative: Is related to the actual position
+
+Feb 23
+-------
+
+For new CSS properties, check portfolio example's stylesheet.
+
+# CSS grid system
+----------------
+* Grid is a space with a set of rows and columns.
+* To make a tag/element. for example a section into a grid, use the property, **display: grid**.
+* If columns are to be created, use **grid-template-columns**.
+* If rows are to be created in the frid, use **grid-template-rows**.
+* **column-gap** to add gap between columns.
+* **row-gap** to add gap between rows.
+* **gap** to add gap between columns and rows.
+
+Feb 26
+------
+
+# Text align: justify, ** text wil align horizontally from start till end for every line except for the last line if content is less.
+
+# rem: 1 rem is a unit of measurement, which is equal to 16px.
+
+Feb 27
+------
+
+## Linear gradient: Used to create a combination of colors. This is applied as a value to the background-image property.
+
+# syntax: 
+------
+background-image: linear-gradient(direction, color1----colors)
+
+* e.g.,  background-image: linear-gradient(to top left,red,yellow);
+
+here, to 'direction name' could be any of the ones listed below.
+
+## direction name:
+-------------
+top, top right, right, bottom right, bottom, bottom left, left, top left
+
+## Animation
+-----------
+<!-- syntax: -->
+
+tag selector {animation: name duration<!-- total duration --> infinite <!-- used only if this needs to run infinitely. Or use the property: 'animation-iteration-count' for limited number instead of infinite  -->;}
+@keyframes name{
+  10% <!-- of total duration, for e.g., if duration is 5 sec, 10% is 0.5 sec --> {
+     property : value
+  }
+  50% {
+    property : value
+  }
+}
+
+Feb 29
+------
+
+## mediaQuery
+-------------
+This is a css concept used to make a webpage responsive. Making a mobile first approach.
+
+syntax: <!-- It is a set of rules to get an output. -->
+-------
+@media(expression){
+  selectors{
+    property:value;
+  }
+}
+
+Screen sizes:-
+* Extra small devices (phones) - Max width: 600px
+* Small devices(Portrait tablets and large phones) - Min width: 600px
+* Medium devices (landscape tablets) - Min width: 768px or more
+* Large devices (Laptops/Desktops) - Min width: 992px or more
+* Extra-large devices (Large laptops and desktops) - Min width: 1200px and up.
+
+E.g., 
+
+  <!--  @media(max-width:600px){
+    p{
+        font-size: 50px;
+        color: red;
+    }
+}
+ -->
+
+* CSS properties: (differences)
+-----------------
+# Visibility: hidden, Element loads but content is hidden. The element space can be seen hence.
+# Display:none, Element itself is hidden.
+
+March 1
+-------
+CSS property:
+------------
+** z-index: It specifies the stack order of an element. (last come first out.)
+* It only works on positioned elements (relative, absolute, fixed)
+* Element with higher z-index will be placed at the top.
+* value can be negative as well as positive.
+
+<!-- Suntax:
+
+.container img {
+            position: absolute;
+        }
+        #img2{
+            z-index:1; <!-- integers -->
+        } -->
+
+** Transform - CSS property lets you rotate, scale, skew, or translate an element. Property used to move elements in 2d or 3d directions.
+* Translate: Moves the item in specified pixesls to the direction. Translate and Translate X are same. <!-- Otherwise, specifify translate x and translate y. -->
+* A 3 dimensional property value for transform is "scale". It's used to zoom in and zoom out.
+* rotate: rotate(90deg)
+
+
+CSS variables:
+--------------
+
+CSS Variables are used to  store values. Can also be used to style.
+## Types of CSS variables:
+1. Global variables - Can access throughout the CSS.
+2. Local variables. - Access is limited in the area where it's declared.
+
+syntax:
+--------
+
+  --variablesName: value <!-- This is how we create a variable -->
+
+  var(variablesName)  <!-- This is how we access the variable -->
+
+-------------------------------
+
+Global variables,
+----------------
+
+:root{
+  <!-- place variables here -->
+}
+
+
+The advantage of variable is that you need to just make changes to the variable value to apply changes globally.
+
+March 4
+--------
+
+Bootstrap: It is a popular open-source front-end framework developed by Twitter.
+--------
+
+1. It is a popular open-source front-end framework developed by Twitter. <!-- open source -  Free and open resources-->
+<!-- front-end framework: The entire workflow is controlled by the framework. Works between frames. Has predefined classes, functions, etc. Bootstrap has certain classes to work with.--> 
+2. It's a collection of HTML, CSS, and Javascript.
+3. Features:
+    i. Responsive designing. Helps make web responsive without using media query.
+    ii. Grid system.
+    iii. Pre-styled components. E.g., Nav bar, buttons, forms, etc. For something like form classes are already available. Just reuse.
+    iv.  For interaction, there are Javascript plugins: E.g., Carousels, Modals
+     v. Customization. You can customize and edit the components like form.
+
+Bootstrap can be accessed using two methods in your project:
+1. Downloading Bootstrap from the official website. (This is better approach.)
+2. Using Bootstrap cdn. Type Bootstrap 5.
+
+Classes:
+1. # container: It gives automatic margins on left and right.
+2. # container-fluid: Margins are not provided. The width will be 100%.
+3. # Colors: There are 8 colors in bootstrap. You need CSS for more colors.
+          * primary (blue)
+          * secondary (grey)
+          * danger (red)
+          * success (green)
+          * warning (orange)
+          * dark (black)
+          * light (white)
+          * info (light blue)
+
+4. # Border: Gives border to an element. Use the class <!-- border border-colorname border-3 -->
+   * Width of border given from a range of 1-5. Other options, go with CSS itself.
+   * To specify any one side: border-top, border-bottom, border-start, border-end
+   * To avoid giving borders to any one side, apply border class and then set, for e.g., border-top-0
+   * Thickness: 1 - ~4px, 2- ~8px, 3 - ~16px, 4 - ~24px, 5 - ~48px
+    <!-- <div class="container border border-top-0 border-primary border-4"> -->
+5. # Rounded (Instead of border-radius): 
+    * This is used to apply curved edges. You can specify values from 1-5. Other values specified using CSS.
+    <!-- <div class="container border border-4 rounded-4"> -->
+    * To individually apply curvature, use 
+     rounded-top - top two edges
+     rounded-bottom - bottom two edges
+     rounded-start - left two edges
+     rounded-end - right two edges
+     rounded-circle - circle shaped edges
+     rounded-pill - oval shaped edges
+
+6. # Margin - Class name will be 'm'. Margins are applied from 1-5.
+  *   <!-- class="text-primary m-5 --> The margin width for m-1 is approx 5px.
+  * Applying margins on all sides - m, margin top (mt), margin bottom (mb), margin end (me), margin start (ms), mx(left and right), my(top and bottom), auto - automatically adjusts margin based on given space. 
+
+7. # Padding - Noramlly p from 1-5. The values are pt ps pe pb px py.
+
+8. # Font size - fs. Values 1-5, 1 is biggest and 5 is smallest.
+
+9. # Width: w - Values are 25 50 75 100.
+
+10. # Button: btn .To apply bg color btn-primary, btn-color, btn-outline-primary <!-- gives a border color and gives color on hover, basically a pseudo class is added. -->
+
+## Note: JavaScript to be placed in a script tag.
+
+------------------------
+
+March 6
+--------
+
+Bootstrap grid system.
+----------------------
+
+* To create rows, **row** class is used. When you apply row class, there will be 12 columns will be created. <!-- So, if you want to consume 4 columns, 3 columns will be consumed in every column. -->
+* To create columns, **col** class is used.
+
+syntax:
+-------
+<!-- This is the first row, where you have 3 columns each consuming 4 columns each -->
+<!-- <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+</row>
+
+<!-- This is the second row, where first and last column consumes 2 columns and second and third consumes 4 column width each. 1 = ~4px -->
+
+<!-- <div class="row">
+    <div class="col-2"></div>
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+    <div class="col-2"></div>
+</row>
+ -->
+
+March 7
+-------
+Responsive website using bootstrap.
+-----------------------------------
+Device Resolutions:
+* xs <576px	
+* sm ≥576px	
+* md ≥768px	
+* lg ≥992px	
+* xl ≥1200px	
+* xxl ≥1400px
+
+syntax:
+---------
+<!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"> -->
+
+--------
+
+# Favorite icon (Favicon) - Provided inside <head> under <link>
+
+<link rel="icon" type="image/icon" href="img_url">
+
+----
+
+### me-auto (adds space towards the end (rightside) of the screen)
+### ms-auto (adds space towards the start (rightside) of the screen)
+
+March 8
+-------
+Classes in Bootstrap:
+---------------------
+
+* align-items-center: To vertically align list items
+* d-flex: Display flex class in Bootstrap
+* text-cente: To align text to center
+
+March 14
+--------
+
+Git and Github
+---------------
+* Github is a cloud-based platform used for version control and collaboration on software development projects.
+## Features of GitHub:
+---------------------
+1. Version control system: Stores all versions of the software.
+2. Code sharing: Can collaborate with a team from anywhere in the world.
+3. Hosting/Deployment: Can deploy the code to access from anywhere over the internet. Only for mini projects having html, css, and javascript artifacts.
+
+Note: GIT is a tool to do operations in GitHub. It's locally installed in your machine.
+
+Storage
+-------
+* Storage space in GitHub is called Remote repository.
+* Storage space in Git is called Local repository.
+* Storage space in system is called local storage.
+
+GIT operations
+---------------
+1. Push -- Add code. Pushes code from local to remote repo.
+2. Clone -- Copy code. Downloads code from remote to local repo. 
+3. Pull -- Fetch updated code. Downloads just the updated code from remote to local repo.
+
+
+PUSH operation
+-------------
+There are certain stages in push.
+
+1. GIT add: Adds code from local storage to Staging area. Staging area is initially hidden.
+2. GIT commit: From staging area to local repo.
+3. GIT commit: From local repo to remote repo.
+
+Dev side   |    Github side
+--------        -----------
+
+Local storage
+|
+| GIT add
+v
+Staging area (This is initially hidden)
+|
+| GIT commit
+v             git push
+Local repo -------------> Remote repo
+
+
+* Staging area is an intermediate stage b/w working directory(local storage) and local repository. It's usually hidden.
+
+Commands:
+---------
+
+1. git init - To initialize git inside a particular working directory. This is to be done only once.
+2. git status - Find status of tracked and untracked files. (Finds status of all untracked and modified files)
+3. git add <filename> or git add . (adds all untracked files to staging.)
+4. git commit -m"initial version" (text in quoates is the message.)
+   or git commit -a -m"message"
+## Create remote repository in GitHub on GitHub. Copy the code from there and paste in terminal.
+5. git remote -v (Gives confirmation whether the remote repo and local repo are connected.)
+6. git remote add origin (adds code from origin to remote)
+7. git push origin master (pushes updated code)
+8. rm -fr .git (to remove the local git repo)
+
+Token generation in GITHub
+--------------------------
+Sign in to GithUB > Profile > Settings > Developer settings > Generate Classic tokens.
+
+How to host on GitHub?
+----------------------
+
+1. Ensure file name has index.html. 
+2. Go to settings at the top.
+3. Click **pages** from side nav.
+4. Set branch as Master from none and click save.
+5. Refresh the page.
+6. Access the link that's shared with you.
+
+# Netlify: Like GitHub, for simple projects with HTML, CSS, JS.
+
+# Vercel (Frontend)/Render(Backend)
+
